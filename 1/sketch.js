@@ -6,11 +6,17 @@ function setup() {
 }
 
 function draw() {
-  let x = 10;
+  let x = 0;
+  let y = 0;
+  let z = 0;
   fill(0);
   while (x < width) {
-    ellipse(x, height / 2, 10, 10);
+    line(x, z / 2, x, 100);
+    line(z, y / 2, x, x);
+    line(y, x / 2, x, x);
     x = x + 30;
+    y = y + 60;
+    z = z + 120;
   }
 }
 
