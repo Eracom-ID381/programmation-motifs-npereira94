@@ -18,6 +18,13 @@ function draw() {
     y = y + 60;
     z = z + 120;
   }
+  while (y < width) {
+    ellipse(x, z / 2, x, 100);
+
+    x = x + 6;
+    y = y + 12;
+    z = z + 24;
+  }
 }
 
 function windowResized() {
