@@ -6,9 +6,14 @@ function setup() {
 }
 
 function draw() {
+  background(255);
   fill(0);
-  for (let x = 10; x < width; x = x + 30) {
-    ellipse(x, height / 2, 10, 10);
+  for (let x = 10; x <= width - 20; x += 10) {
+    for (let y = 200; y <= height - 200; y += 100) {
+
+      line(width / 2, y, x, 10);
+
+    }
   }
 }
 
