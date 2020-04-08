@@ -7,7 +7,7 @@ function setup() {
 
 function draw() {
   fill(0);
-  for (let x = 10; x < width; x = x + 30) {
+  for (let x = 10; x <= width; x = x + 30) {
     ellipse(x, height / 2, 10, 10);
   }
 }

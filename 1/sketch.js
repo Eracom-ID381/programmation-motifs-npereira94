@@ -8,8 +8,8 @@ function setup() {
 function draw() {
   background(255);
   fill(0);
-  for (let x = 20; x <= width - 20;) {
-    line(x, 2, x, 100);
+  for (let x = 20; x <= width - 20; x += 20) {
+    ellipse(x, 20, x, 100);
 
   }
 }
