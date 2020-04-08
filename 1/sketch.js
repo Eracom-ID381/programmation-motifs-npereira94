@@ -6,24 +6,11 @@ function setup() {
 }
 
 function draw() {
-  let x = 0;
-  let y = 0;
-  let z = 0;
+  background(255);
   fill(0);
-  while (x < width) {
-    line(x, z / 2, x, 100);
-    line(z, y / 2, x, x);
-    line(y, x / 2, x, x);
-    x = x + 30;
-    y = y + 60;
-    z = z + 120;
-  }
-  while (y < width) {
-    ellipse(x, z / 2, x, 100);
+  for (let x = 20; x <= width - 20;) {
+    line(x, 2, x, 100);
 
-    x = x + 6;
-    y = y + 12;
-    z = z + 24;
   }
 }
 
