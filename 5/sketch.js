@@ -9,8 +9,9 @@ function draw() {
   background(255);
   fill(0);
   for (let x = 10; x <= width - 10; x += 10) {
-    for (let y = 600; y <= height - 10; y += 100) {
-      line(x, 100, y, 1000);
+    for (let y = 6; y <= height - 10; y += 100) {
+      line(x, 1, y, 5000);
+
 
 
 
