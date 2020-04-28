@@ -15,6 +15,7 @@ function draw() {
       line(0, x, x, 1000);
       line(1000, x, x, 0);
 
+
     }
   }
 }

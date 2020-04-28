@@ -12,6 +12,7 @@ function draw() {
     for (let y = 10; y <= height - 50; y += 50) {
       line(x, y, x, 2000);
       line(0, y, 2000, y);
+      rect(x, width / 2, 200, y);
     }
   }
 }
