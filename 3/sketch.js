@@ -14,6 +14,7 @@ function draw() {
     for (let y = 100; y <= height - 100; y += 100) {
       line(0, x, x, 1000);
       line(1000, x, x, 0);
+      line(0, x, x, 0);
 
 
     }

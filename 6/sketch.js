@@ -1,8 +1,6 @@
 function setup() {
   let navWidth = document.getElementById("nav").offsetWidth;
   let canvas = createCanvas(windowWidth - navWidth, windowHeight);
-  var y = 100
-  var x = 50
   canvas.parent('canvas');
   background(255);
 
@@ -10,17 +8,17 @@ function setup() {
 
 function draw() {
   background(255);
-  fill(random(255), random(255), random(255))
-  // ellipse(mouseX,mouseY,25,25);
-  while (x < 3900) {
-    x = x + 10;
-    ellipse(x, y, 10, 10);
-  }
-  if (x >= 1000) {
-    x = 10
-    y = y + 10
+  fill(0);
+  for (let x = 1; x <= width; x += 1000) {
+    for (let y = 20; y <= height; y += 2000) {
+
+      circle(5, x / 2, y / 2);
+
+
+    }
   }
 }
+
 
 function windowResized() {
   let navWidth = document.getElementById("nav").offsetWidth;
