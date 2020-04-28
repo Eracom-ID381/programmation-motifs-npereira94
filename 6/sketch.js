@@ -1,31 +1,27 @@
 function setup() {
   let navWidth = document.getElementById("nav").offsetWidth;
   let canvas = createCanvas(windowWidth - navWidth, windowHeight);
-  let x = 0;
+  var y = 100
+  var x = 50
   canvas.parent('canvas');
   background(255);
-  noLoop();
+
 }
 
 function draw() {
-  background(204);
-  x = x + 100;
-  if (x > width) {
-    x = 0;
+  background(255);
+  fill(random(255), random(255), random(255))
+  // ellipse(mouseX,mouseY,25,25);
+  while (x < 3900) {
+    x = x + 10;
+    ellipse(x, y, 10, 10);
   }
-  line(x, 200, x, height);
+  if (x >= 1000) {
+    x = 10
+    y = y + 10
+  }
 }
 
-
-function mousePressed() {
-  loop();
-}
-
-function mouseReleased() {
-  noLoop();
-}
-
-horizontal line moves slowly from left.Loops but stops on mouse press.
 function windowResized() {
   let navWidth = document.getElementById("nav").offsetWidth;
   resizeCanvas(windowWidth - navWidth, windowHeight);
