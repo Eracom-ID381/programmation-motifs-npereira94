@@ -6,13 +6,12 @@ function setup() {
 }
 
 function draw() {
-  background(255);
-  fill(0);
-  for (let x = 1; x <= width - 10; x += 10) {
-    for (let y = 1; y <= height - 10; y += 10) {
-      line(x, y, x, 2000);
-      line(0, y, 2000, y);
-      rect(10, 10, 10, 10);
+
+
+  fill(100);
+  for (let x = 5; x <= width - 10; x += 10) {
+    for (let y = 8; y <= height - 10; y += 10) {
+      triangle(x, 1, 1, height / 2, x, height);
 
     }
   }
