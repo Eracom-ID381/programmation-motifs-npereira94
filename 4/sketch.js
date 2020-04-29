@@ -6,18 +6,14 @@ function setup() {
 }
 
 function draw() {
-  background(255);
-  fill(0);
-  for (let x = 10; x <= width - 20; x += 10) {
-    for (let y = 200; y <= height - 200; y += 100) {
 
-      line(width / 2, y, x, 10);
-    }
-  }
+  background(0)
   noFill();
+  stroke(255);
+  strokeWeight(1);
   for (let x = 10; x <= width - 10; x += 10) {
     for (let y = 6; y <= height - 10; y += 100) {
-      bezier(x, 20, 10, 10, 90, 90, 15, 80);
+      bezier(x, y, 1, 1, x, 900, y, x);
     }
   }
 }
