@@ -7,8 +7,11 @@ function setup() {
 
 function draw() {
 
+  background(0)
+  noFill();
+  stroke(255);
+  strokeWeight(1);
 
-  fill(100);
   for (let x = 5; x <= width - 10; x += 10) {
     for (let y = 8; y <= height - 10; y += 10) {
       triangle(x, 1, 1, height / 2, x, height);
