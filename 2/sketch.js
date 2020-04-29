@@ -7,20 +7,19 @@ function setup() {
 
 function draw() {
   background(255);
-  fill(0);
-  for (let x = 1; x <= width - 20; x += 10) {
-    for (let y = 100; y <= height - 100; y += 100) {
-      line(y, x, x, y);
+  noFill();
 
 
-    }
-  }
-  fill(255);
   for (let x = 1; x <= width - 30; x += 20) {
     for (let y = 2; y <= height - 30; y += 1) {
 
-      circle(x, y, 10);
+      circle(x, y, 1);
+    }
+  }
+  for (let x = 50; x <= width - 30; x += 20) {
+    for (let y = 50; y <= height - 30; y += 10) {
 
+      ellipse(x, y, random(0, 50), random(0, 100));
     }
   }
 }
