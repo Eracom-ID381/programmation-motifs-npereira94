@@ -7,28 +7,18 @@ function setup() {
 }
 
 function draw() {
-  background(255);
-  fill(255);
+  background(0)
+  noFill();
+  stroke(255);
+  strokeWeight(1);
   for (let x = 1; x <= width + 10; x += 10) {
     for (let y = 2; y <= height - 20; y += 20) {
 
-      circle(x, y, 400);
-      circle(x, y, 1);
+      circle(x, y, 40);
 
     }
   }
-  for (let x = 1; x <= width + 100; x += 10) {
-    for (let y = 1; y <= height - 20; y += 20) {
 
-
-
-
-
-
-
-
-    }
-  }
 }
 
 
