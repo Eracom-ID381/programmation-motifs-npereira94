@@ -8,11 +8,12 @@ function setup() {
 
 function draw() {
   background(255);
-  fill(0);
-  for (let x = 1; x <= width; x += 1000) {
-    for (let y = 20; y <= height; y += 2000) {
+  fill(255);
+  for (let x = 1; x <= width + 10; x += 10) {
+    for (let y = 2; y <= height - 20; y += 20) {
 
-      circle(5, x / 2, y / 2);
+
+      circle(x, y, 1);
 
 
     }
