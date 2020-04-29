@@ -11,9 +11,12 @@ function draw() {
   fill(255);
   for (let x = 1; x <= width + 10; x += 10) {
     for (let y = 2; y <= height - 20; y += 20) {
-
-
       circle(x, y, 1);
+      circle(y, x, 900);
+
+
+
+
 
 
     }
