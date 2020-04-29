@@ -11,6 +11,7 @@ function draw() {
   for (let x = 1; x <= width - 20; x += 10) {
     for (let y = 100; y <= height - 100; y += 100) {
       line(y, x, x, y);
+      circle(x, y, 1);
 
     }
   }
