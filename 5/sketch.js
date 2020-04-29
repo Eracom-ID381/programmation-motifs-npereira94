@@ -13,8 +13,6 @@ function draw() {
       line(x, 1, y, 5000);
     }
   }
-
-
 }
 
 function windowResized() {
