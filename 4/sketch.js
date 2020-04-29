@@ -13,7 +13,8 @@ function draw() {
   strokeWeight(1);
   for (let x = 10; x <= width - 10; x += 10) {
     for (let y = 6; y <= height - 10; y += 100) {
-      bezier(x, y, 1, 1, x, 900, y, x);
+      bezier(x, y, x, random(0, 50), x, 900, y, x);
+
     }
   }
 }
