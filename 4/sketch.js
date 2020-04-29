@@ -12,9 +12,12 @@ function draw() {
     for (let y = 200; y <= height - 200; y += 100) {
 
       line(width / 2, y, x, 10);
-
-
-
+    }
+  }
+  fill(30);
+  for (let x = 10; x <= width - 10; x += 10) {
+    for (let y = 6; y <= height - 10; y += 100) {
+      curve(x, y, x, y, x, y, x, y, x, y, 65, 0);
     }
   }
 }

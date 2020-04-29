@@ -11,12 +11,10 @@ function draw() {
   for (let x = 10; x <= width - 10; x += 10) {
     for (let y = 6; y <= height - 10; y += 100) {
       line(x, 1, y, 5000);
-
-
-
-
     }
   }
+
+
 }
 
 function windowResized() {
